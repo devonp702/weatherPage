@@ -9,13 +9,78 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 
-  <title>Hello, world!</title>
+  <title>Heavy Metal Weather </title>
 </head>
 
 <body>
-  <h1>Hello, world!</h1>
-
+  <header>
+    <div class="container-fluid">
+      <div class="row mh-200">
+        <img class="img-fluid col-2" src="pictures/rocker.png" alt="A silhouette of a man with a guitar">
+        <div class="col-8">
+          <h1>Heavy Metal Weather</h1>
+          <i>Your local weather, with a metal aesthetic.</i>
+        </div>
+        <img class="img-fluid col-2" src="pictures/skull.png" alt="A skull with a crown">
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <!--Search and Saved Locations-->
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="card-dark">
+          <label for="cityText">Search for local weather by City Name:</label>
+          <input type="text" id="cityText"><button id="searchBtn" type="button" class="btn btn-danger">Get Weather</button>
+          <br><h2>Past Searches:</h2>
+          <div id="pastSearch" class="btn-group-vertical">
+            <button type="button" class="btn btn-dark btn-lg">San Francisco</button>
+            <button type="button" class="btn btn-dark btn-lg">Denver</button>
+            <button type="button" class="btn btn-dark btn-lg">New York</button>
+          </div>
+        </div>
+      </div>
+      <!--Display Today's Weather-->
+      <div class="col-12 col-md-6">
+        <div class="card-dark mb-3">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="http://openweathermap.org/img/wn/10d@4x.png" class="card-dark-img" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body card-dark">
+                <h5 id=cityDisplay class="card-title"></h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--5 day forecast-->
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <img src="http://openweathermap.org/img/wn/10d@4x.png" class="card-img-top" alt="...">
+          <div class="card-body card-dark">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">footer</div>
+      </div>
+    </div>
+  </footer>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -27,7 +92,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
   </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="script.js"></script>
+  </script>
 </body>
 
 </html>
