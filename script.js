@@ -8,8 +8,9 @@ $(function () {
   function buttoning() {
     for (var i = 0; i < (searchHistory.length); i++) { //for each city in the history make a button
       var cname = searchHistory[i];
-      var newbutton = $("<button>" + cname + "</button>");
+      var newbutton = $("<button class='btn btn-dark btn-lg'>" + cname + "</button>");
       $("#pastSearch").append(newbutton);
+      $("#pastsearch").last().on("click", search(searchHistory[i]));
     }
   }
   var load = localStorage.getItem("citySave"); //if there is local storage, load it to the page
@@ -52,6 +53,7 @@ $(function () {
         var windSpeed = current.wind.speed; // in mph
         var humidity = current.main.humidity; // percent
         var uvIdx = multiDay.daily[0].uvi;
+        $("#info").empty();
         $("#info").html("<ul><li>Current Temperature: " + tempNow + "</li><li> High: " + tempHigh + ", Low: " + tempLow + "</li><li>Outside: " + conditions + "</li><li>Wind Speed: " + windSpeed + "MPH</li><li>Humidity: " + humidity + "%</li><li id='uvIndex'>UV Index: " + uvIdx + "</li></ul>");
 
         function fiveDay(idx) {
@@ -71,9 +73,9 @@ $(function () {
           searchHistory.push(current.name);
           localStorage.setItem("citySave", JSON.stringify(searchHistory)); //save list to local storage
           $("#pastSearch").empty();
-          buttoning();
         }
       });
     });
   }
+  buttoning();
 });

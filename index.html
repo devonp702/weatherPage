@@ -16,75 +16,74 @@
 
 <body>
   <div class="wrapper">
-  <header>
-    <div class="container-fluid">
-      <div class="row mh-200">
-        <img class="img-fluid col-2" src="pictures/rocker.png" alt="A silhouette of a man with a guitar">
-        <div class="col-8">
-          <h1>Heavy Metal Weather</h1>
-          <i>Get the weather, and get rocking.</i>
+    <header>
+      <div class="container-fluid">
+        <div class="row mh-200">
+          <img class="img-fluid col-2" src="pictures/rocker.png" alt="A silhouette of a man with a guitar">
+          <div class="col-8">
+            <h1>Heavy Metal Weather</h1>
+            <i>Get the weather, and get rocking.</i>
+          </div>
+          <img class="img-fluid col-2" src="pictures/skull.png" alt="A skull with a crown">
         </div>
-        <img class="img-fluid col-2" src="pictures/skull.png" alt="A skull with a crown">
       </div>
-    </div>
-  </header>
-  <main class="container">
-    <!--Search and Saved Locations-->
-    <div class="row">
-      <div class="col-12 col-md-6">
-        <div class="card-dark">
-          <label for="cityText">Search for local weather by City Name:</label>
-          <input type="text" id="cityText"><button id="searchBtn" type="button" class="btn btn-danger">Get
-            Weather</button>
-          <br>
-          <h2>Past Searches:</h2>
-          <div id="pastSearch" class="btn-group-vertical">
-            <button type="button" class="btn btn-dark btn-lg">San Francisco</button>
-            <button type="button" class="btn btn-dark btn-lg">Denver</button>
-            <button type="button" class="btn btn-dark btn-lg">New York</button>
+    </header>
+    <main class="container">
+      <!--Search and Saved Locations-->
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="card-dark">
+            <label for="cityText">Search for local weather by City Name:</label>
+            <input type="text" id="cityText"><button id="searchBtn" type="button" class="btn btn-danger">Get
+              Weather</button>
+            <br>
+            <h2>Past Searches:</h2>
+            <div id="pastSearch" class="btn-group-vertical"></div>
           </div>
         </div>
-      </div>
-      <!--Display Today's Weather-->
-      <div class="col-12 col-md-6">
-        <div class="card-dark mb-3">
-          <div class="row no-gutters">
-            <div class="col-md-4">
-              <img id="viewNow" src="http://openweathermap.org/img/wn/10d@4x.png" class="card-dark-img"
-                alt="Today's weather conditions">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body card-dark">
-                <h2 id=cityDisplay class="card-title"></h2>
-                <p id="info" class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quod
-                  sunt, suscipit, quas nemo sint hic distinctio alias officia veniam, voluptatem laboriosam ipsa nostrum
-                  consectetur dolores omnis! Ipsum, maxime enim?</p>
-                <p class="card-text"><small id="date" class="text-muted"></small></p>
+        <!--Display Today's Weather-->
+        <div class="col-12 col-md-6">
+          <div class="card-dark mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img id="viewNow" src="http://openweathermap.org/img/wn/10d@4x.png" class="card-dark-img"
+                  alt="Today's weather conditions">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body card-dark">
+                  <h2 id=cityDisplay class="card-title"></h2>
+                  <p id="info" class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quod
+                    sunt, suscipit, quas nemo sint hic distinctio alias officia veniam, voluptatem laboriosam ipsa
+                    nostrum
+                    consectetur dolores omnis! Ipsum, maxime enim?</p>
+                  <p class="card-text"><small id="date" class="text-muted"></small></p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!--5 day forecast-->
-    <div class="row">
-      <div class="col-12">
-        <div id="forecast" class="card-group">
-          <div id="day0" class='card-dark'></div>
-          <div id="day1" class='card-dark'></div>
-          <div id="day2" class='card-dark'></div>
-          <div id="day3" class='card-dark'></div>
-          <div id="day4" class='card-dark'></div>
+      <!--5 day forecast-->
+      <div class="row">
+        <div class="col-12">
+          <div id="forecast" class="card-group">
+            <div id="day0" class='card-dark'></div>
+            <div id="day1" class='card-dark'></div>
+            <div id="day2" class='card-dark'></div>
+            <div id="day3" class='card-dark'></div>
+            <div id="day4" class='card-dark'></div>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
-  <div class="push"></div>
-</div>
+    </main>
+    <div class="push"></div>
+  </div>
   <footer>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12"><h2>Made in the U.S.A. &copy; Devon Phillips 2020</h2></div>
+        <div class="col-12">
+          <h2>Made in the U.S.A. &copy; Devon Phillips 2020</h2>
+        </div>
       </div>
     </div>
   </footer>
