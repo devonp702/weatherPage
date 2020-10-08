@@ -15,6 +15,7 @@
 </head>
 
 <body>
+  <div class="wrapper">
   <header>
     <div class="container-fluid">
       <div class="row mh-200">
@@ -49,12 +50,15 @@
         <div class="card-dark mb-3">
           <div class="row no-gutters">
             <div class="col-md-4">
-              <img id="viewNow" src="http://openweathermap.org/img/wn/10d@4x.png" class="card-dark-img" alt="Today's weather conditions">
+              <img id="viewNow" src="http://openweathermap.org/img/wn/10d@4x.png" class="card-dark-img"
+                alt="Today's weather conditions">
             </div>
             <div class="col-md-8">
               <div class="card-body card-dark">
                 <h2 id=cityDisplay class="card-title"></h2>
-                <p id="info" class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quod sunt, suscipit, quas nemo sint hic distinctio alias officia veniam, voluptatem laboriosam ipsa nostrum consectetur dolores omnis! Ipsum, maxime enim?</p>
+                <p id="info" class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quod
+                  sunt, suscipit, quas nemo sint hic distinctio alias officia veniam, voluptatem laboriosam ipsa nostrum
+                  consectetur dolores omnis! Ipsum, maxime enim?</p>
                 <p class="card-text"><small id="date" class="text-muted"></small></p>
               </div>
             </div>
@@ -65,19 +69,22 @@
     <!--5 day forecast-->
     <div class="row">
       <div class="col-12">
-        <div class="card">
-          <img id="bigIcon" src="http://openweathermap.org/img/wn/10d@4x.png" class="card-img-top" alt="5 day forecast">
-          <div class="card-body card-dark">
-            <p id="nowDisplay" class="card-text"></p>
-          </div>
+        <div id="forecast" class="card-group">
+          <div id="day0" class='card-dark'></div>
+          <div id="day1" class='card-dark'></div>
+          <div id="day2" class='card-dark'></div>
+          <div id="day3" class='card-dark'></div>
+          <div id="day4" class='card-dark'></div>
         </div>
       </div>
     </div>
   </main>
+  <div class="push"></div>
+</div>
   <footer>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12">footer</div>
+        <div class="col-12"><h2>Made in the U.S.A. &copy; Devon Phillips 2020</h2></div>
       </div>
     </div>
   </footer>

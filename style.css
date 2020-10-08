@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@900&family=Special+Elite&display=swap');
 
+html, body{
+  height: 100%;
+  margin: 0px;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -40px;
+}
+
 body {
   background-image: url("pictures/fire.jpg");
   background-repeat: repeat;
@@ -15,6 +25,14 @@ header {
 
 header img {
   max-height: 250px;
+}
+
+#forecast div {
+  padding: 3px;
+  margin: 5px;
+  border: 2px;
+  border-style: dotted;
+  border-color: crimson;
 }
 
 main {
@@ -35,4 +53,8 @@ p, i, button, h2 {
 
 #info li {
   font-family: 'Special Elite', cursive;
+}
+
+.footer, .push {
+  height: 40px;
 }
